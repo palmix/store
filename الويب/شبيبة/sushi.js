@@ -121,7 +121,7 @@ var indexModel = kendo.observable({
 
 var detailModel = kendo.observable({
     imgUrl: function() {
-        return "https://cdn.rawgit.com/palmix/store/tree/master/Web/images/200/" + this.get("current").image
+        return "https://cdn.rawgit.com/palmix/store/master/Web/images/200/" + this.get("current").image
     },
 
     price: function() {
