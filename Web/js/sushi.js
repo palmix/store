@@ -9,7 +9,7 @@ var items = new kendo.data.DataSource({
     { 
         read: 
         { 
-            url:  "https://cdn.rawgit.com/palmix/Sushi/master/Web/data/menu.json",
+            url:  "https://cdn.rawgit.com/palmix/store/master/Web/data/menu.json",
             dataType: "json" 
         } 
     }
@@ -121,7 +121,7 @@ var indexModel = kendo.observable({
 
 var detailModel = kendo.observable({
     imgUrl: function() {
-        return "/images/200/" + this.get("current").image
+        return "https://cdn.rawgit.com/palmix/store/tree/master/Web/images/200/" + this.get("current").image
     },
 
     price: function() {
